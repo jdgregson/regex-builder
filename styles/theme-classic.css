@@ -1,0 +1,71 @@
+.grey {
+  color: #999;
+}
+
+body {
+  background-color: #eee;
+  background-image: url("../img/bg.jpg");
+}
+
+.group {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #bbb;
+}
+
+.affix {
+  background: #eee;
+  background: rgba(255,255,255,0.5);
+  box-shadow: 0 1px 5px #aaa;
+  border-bottom: 1px solid #fff;
+}
+
+#exp, #exp_dsp, #flags, #match, #txt {
+  font-family: Menlo, Consolas, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;
+}
+
+#exp {
+  background: #fff;
+}
+
+#exp:focus {
+  border-color: #66afe9;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
+}
+
+#exp_dsp .error {
+  color: #f13f86;
+}
+
+#match {
+  background: #fff;
+  box-shadow: 0 1px 3px #aaa;
+}
+
+.g {
+  background: #eee;
+}
+
+#txt {
+  background: #fff;
+}
+
+#txt ol li:first-child {
+  opacity: 0.5;
+}
+
+#txt:focus {
+  border-color: #66afe9;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
+}
+
+#txt i {
+  background: #cff5ff;
+  box-shadow: 0 0 0 1px #09f;
+}
+
+#txt b {
+  background: #ffdfff;
+  box-shadow: 0 0 0 1px #df56ad;
+}
