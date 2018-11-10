@@ -25,6 +25,10 @@ body {
   font-size: 14px;
 }
 
+#exp, #exp_dsp, #flags, #match, #txt, body {
+    font-family: Menlo, Consolas, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;
+}
+
 #exp {
   min-height: 34px;
   padding: 6px 12px;
@@ -123,4 +127,18 @@ body {
   top: 5px;
   width: 5px;
   height: 10px;
+}
+
+#flags-input .tooltip-inner {
+  white-space: pre-wrap;
+  line-height: 10px;
+  text-align: start;
+}
+
+#flags-input .tooltip-inner b {
+  font-size: 17px;
+}
+
+.tooltip.in {
+  opacity: 1;
 }

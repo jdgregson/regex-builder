@@ -29,10 +29,6 @@ a {
   z-index: 1;
 }
 
-#exp, #exp_dsp, #flags, #match, #txt, body {
-  font-family: Menlo, Consolas, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;
-}
-
 #exp {
   background: #284452;
   border: none !important;
@@ -54,8 +50,8 @@ a {
 }
 
 .g {
-    background: #263238;
-    padding: 0 5px;
+  background: #263238;
+  padding: 0 5px;
 }
 
 #txt, #flags, #exe_delay, #match {
@@ -112,13 +108,13 @@ label {
 }
 
 .text-primary {
-    color: #36c7f5;
-    text-decoration: underline;
+  color: #36c7f5;
+  text-decoration: underline;
 }
 
 .popover-content {
-    padding: 9px 14px;
-    background: #284452;
+  padding: 9px 14px;
+  background: #284452;
 }
 
 .popover {
@@ -129,37 +125,37 @@ label {
 }
 
 .popover.bottom .arrow:after {
-    border-bottom-color: #088ca4 !important;
+  border-bottom-color: #088ca4 !important;
 }
 
 .popover.top .arrow:after {
-    border-top-color: #284452 !important;
+  border-top-color: #284452 !important;
 }
 
 .popover.top .arrow:after {
-    border-top-color: #284452 !important;
+  border-top-color: #284452 !important;
 }
 
 .btn-default {
-    color: #7e929e;
-    background-color: #284452;
-    border: 1px solid #284452;
+  color: #7e929e;
+  background-color: #284452;
+  border: 1px solid #284452;
 }
 
 .btn-default:hover, .btn-default:active {
-    color: #263238;
-    background-color: #088ca4;
-    border-color: #088ca4;
+  color: #263238;
+  background-color: #088ca4;
+  border-color: #088ca4;
 }
 
 #share {
-    background-color: #284452;
-    border: none !important;
-    color: #70929e;
+  background-color: #284452;
+  border: none !important;
+  color: #70929e;
 }
 
 #share::placeholder {
-    color: #777;
+  color: #777;
 }
 
 .checkmark {
