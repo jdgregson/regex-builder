@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="lib/regex-colorizer/nobg.css">
 	<link rel="stylesheet" href="styles/main.css">
-	<link rel="stylesheet" href="styles/theme-classic.css">
+	<link rel="stylesheet" href="styles/theme-dark.css">
 </head>
 <body>
 
@@ -38,16 +38,18 @@
 
 	<div class="group">
 		<label for="txt" title="Matched words are highlighted">Visual</label>
-		<label class="pull-right">
-			<input id="txt_hide_switch" type="checkbox" save="val" class="switch_hide" target="txt"> Hide
+		<label class="checkbox-container">Hide
+		  <input type="checkbox" id="txt_hide_switch" save="val" class="switch_hide" target="txt">
+		  <span class="checkmark"></span>
 		</label>
 		<pre id="txt" save="text" contenteditable="true" spellcheck="false"></pre>
 	</div>
 
 	<div class="group">
 		<label for="match" title="Result is json formated">Match</label>
-		<label class="pull-right">
-			<input id="match_hide_switch" type="checkbox" save="val" class="switch_hide" target="match"> Hide
+		<label class="checkbox-container">Hide
+		  <input type="checkbox" id="match_hide_switch" save="val" class="switch_hide" target="match">
+		  <span class="checkmark"></span>
 		</label>
 		<div id="match"></div>
 	</div>
