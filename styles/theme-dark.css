@@ -205,3 +205,15 @@ select {
     font-weight: bold !important;
     font-size: 17px !important;
 }
+
+::-webkit-scrollbar-track {
+    background: #263238; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #03b2c8; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #03b2c8; 
+}

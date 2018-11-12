@@ -47,7 +47,10 @@ body {
 #exp_dsp {
   display: inline-block;
   cursor: pointer;
-  white-space: pre-wrap;
+  white-space: nowrap;
+  overflow-x: scroll;
+  padding-left: 4px;
+  font-size: 16px;
 }
 
 #exp_dsp .error {
@@ -78,8 +81,6 @@ body {
   font-weight: normal;
 }
 
-
-/* checkboxes */
 .checkbox-container {
   position: relative;
   padding-left: 35px;
@@ -130,14 +131,28 @@ body {
   height: 10px;
 }
 
-#flags-input .tooltip-inner {
+#flags_col .tooltip-inner {
   white-space: pre-wrap;
   line-height: 10px;
   text-align: start;
 }
 
-#flags-input .tooltip-inner b {
+#flags_col .tooltip-inner b {
   font-size: 17px;
+}
+
+#flags_col.responsive {
+  margin-top: 12px;
+}
+
+#flags_col.responsive #buttons {
+  float: right;
+  height: 20px;
+  margin-top: 7px;
+}
+
+#flags.responsive {
+  max-width: 50%;
 }
 
 .tooltip.in {
@@ -150,7 +165,6 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
   z-index: 999;
 }
 
@@ -176,7 +190,6 @@ body {
   margin: 0 auto;
   border-radius: 5px;
   padding: 5px;
-  background-color: #284452;
 }
 
 .dialog-close-button {
@@ -206,15 +219,26 @@ body {
 }
 
 .settings-button {
-  fill: #088ca4;
   width: 20px;
 }
 
 .settings-button-stroke {
-  stroke: #088ca4;
   stroke-miterlimit:10;
 }
 
 #settings label {
   margin-right: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+#buttons {
+    height: 31px;
+}
+
+#buttons div {
+  float: right;
 }
