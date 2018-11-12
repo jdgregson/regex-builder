@@ -56,6 +56,7 @@ body {
 #match {
   border-radius: 3px;
   padding: 10px;
+  word-break: break-all;
 }
 
 .g {
@@ -141,4 +142,79 @@ body {
 
 .tooltip.in {
   opacity: 1;
+}
+
+.dialog-wrap {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.dialog-table {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width:100%;
+  display: table;
+  position: fixed;
+}
+
+.dialog-cell {
+  margin: 0;
+  padding: 0;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.dialog-box {
+  max-width: 40em;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #284452;
+}
+
+.dialog-close-button {
+  float: right;
+  margin-top: 0px !important;
+  margin-right: 1px;
+  padding: 5px 2px 4px 2px;
+  border-radius: 3px;
+  margin-top: -4px;
+  font-size: 26px;
+  line-height: 10px;
+  user-select: none;
+}
+
+.dialog-close-button:hover {
+  background-color: #263238;
+  cursor: pointer;
+}
+
+.dialog-box input[type="number"] {
+  width: initial;
+  display: inline-block;
+}
+
+#open-settings-button {
+  cursor: pointer;
+}
+
+.settings-button {
+  fill: #088ca4;
+  width: 20px;
+}
+
+.settings-button-stroke {
+  stroke: #088ca4;
+  stroke-miterlimit:10;
+}
+
+#settings label {
+  margin-right: 10px;
 }

@@ -177,3 +177,31 @@ label {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+.dialog-wrap {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dialog-box {
+  background-color: #284452;
+}
+
+.dialog-close-button:hover {
+  background-color: #263238;
+}
+
+.settings-button {
+  fill: #088ca4;
+}
+
+.settings-button-stroke {
+  stroke: #088ca4;
+}
+
+select {
+    background-color: #284452 !important;
+    border: none !important;
+    color: #7e929e !important;
+    font-weight: bold !important;
+    font-size: 17px !important;
+}

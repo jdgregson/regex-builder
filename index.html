@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="lib/regex-colorizer/nobg.css">
 	<link rel="stylesheet" href="styles/main.css">
-	<link rel="stylesheet" href="styles/theme-dark.css">
+	<link rel="stylesheet" href="styles/theme-dark.css" id="theme-style">
 </head>
 <body>
 
@@ -17,7 +17,7 @@
 
 	<div class="affix">
 		<div class="row">
-			<div class="col-xs-8">
+			<div class="col-xs-9">
 				<label for="exp">
 					<a href="http://xregexp.com/" target="_blank" data-placement="bottom" title="Supports both native RegExp and XRegExp">XRegExp</a>:
 				</label>
@@ -39,9 +39,17 @@
 				    <b>x</b>: free-spacing and line comments
 				    <b>A</b>: Astral">
 			</div>
-			<div class="col-xs-2">
-				<label for="exe_delay">Delay</label>
-				<input type="number" id="exe_delay" bind="exe_delay" save="val" class="form-control" data-placement="bottom" min=0 value="300" title="Execution delay, millisecond">
+			<div class="col-xs-1" id="flags-input">
+				<div id="open-settings-button">
+					<svg class="settings-button" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve" title="Settings" data-placement="bottom">
+						<path class="settings-button-stroke" d="M15.5,8.5V7.5L14,7.3c-0.1-0.6-0.2-1.2-0.5-1.8l1.2-0.9l-0.5-0.8l-1.4,0.6c-0.4-0.5-0.8-0.9-1.3-1.3l0.6-1.4
+							l-0.8-0.5l-0.9,1.2C9.9,2.2,9.3,2.1,8.7,2L8.5,0.5H7.5L7.3,2C6.7,2.1,6.1,2.2,5.6,2.5L4.7,1.3L3.8,1.7l0.6,1.4
+							C3.9,3.5,3.5,3.9,3.1,4.4L1.7,3.8L1.3,4.7l1.2,0.9C2.2,6.1,2.1,6.7,2,7.3L0.5,7.5v0.9L2,8.7c0.1,0.6,0.2,1.2,0.5,1.8l-1.2,0.9
+							l0.5,0.8l1.4-0.6c0.4,0.5,0.8,0.9,1.3,1.3l-0.6,1.4l0.8,0.5l0.9-1.2c0.6,0.2,1.1,0.4,1.8,0.5l0.2,1.5h0.9L8.7,14
+							c0.6-0.1,1.2-0.2,1.8-0.5l0.9,1.2l0.8-0.5l-0.6-1.4c0.5-0.4,0.9-0.8,1.3-1.3l1.4,0.6l0.5-0.8l-1.2-0.9c0.2-0.6,0.4-1.1,0.5-1.8
+							L15.5,8.5z M8,12c-2.2,0-4-1.8-4-4c0-2.2,1.8-4,4-4s4,1.8,4,4C12,10.2,10.2,12,8,12z"/>
+					</svg>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -74,6 +82,32 @@
 				<button class="btn btn-default" onclick="apply_state()" type="button">Apply</button>
 			</span>
 		</div>
+	</div>
+</div>
+
+<div id="hidden" style="display: none">
+	<div id="settings">
+      <table>
+        <tr>
+          <td>
+            <label for="exe_delay">Execution Delay</label>
+          </td>
+          <td>
+            <input type="number" id="exe_delay" bind="exe_delay" save="val" class="form-control" data-placement="bottom" min=0 value="300" title="Execution delay, millisecond">
+          </td>
+        </tr>
+          <tr>
+          <td>
+            <label for="exe_delay">Theme</label>
+          </td>
+          <td>
+            <select id="theme_select" bind="theme_select" save="val" class="form-control" min=0 value="dark" onchange="applyTheme()">
+              <option value="dark">Dark</option>
+              <option value="classic">Classic</option>
+            </select>
+          </td>
+        </tr>
+      </table>
 	</div>
 </div>
 

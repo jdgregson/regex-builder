@@ -89,3 +89,24 @@ body {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+.dialog-wrap {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.dialog-box {
+  background-color: #eee;
+  background-image: url(../img/bg.jpg);
+}
+
+.dialog-close-button:hover {
+  background-color: #eee;
+}
+
+.settings-button {
+  fill: #333333;
+}
+
+.settings-button-stroke {
+  stroke: #333333;
+}
