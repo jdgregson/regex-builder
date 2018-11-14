@@ -1,3 +1,67 @@
+body.wiki main {
+  background-color: #284452 !important;
+}
+
+body.wiki pre {
+  background-color: #263238 !important;
+}
+
+body.wiki code[class*=language-] {
+    color: #b7b7b7 !important;
+}
+
+body.wiki table {
+  border: 1px solid #505050;
+}
+
+body.wiki table {
+  border: 1px solid #505050;
+}
+
+body.wiki {
+  color: #7e929e !important;
+}
+
+body.wiki .document-head {
+    background-color: #284452;
+}
+
+:not(pre)>*>code, :not(pre)>code {
+    background-color: rgba(88, 88, 88, 0.5);
+}
+
+ .text-content h3 .highlight-span {
+    background-color: inherit !important;
+    color: #7e929e  !important;
+}
+
+ .text-content table.standard-table:not(.learn-box) th {
+    border: 2px solid #536b77;
+    border-bottom: 2px solid #536b77;
+    background: rgb(40, 68, 82);
+}
+
+.text-content table.standard-table:not(.learn-box) td {
+    background-color: rgba(53, 56, 58, 0.15);
+    box-shadow: initial !important;
+}
+
+.text-content table.standard-table:not(.learn-box):not(.nostripe) tr:nth-child(odd) td {
+    background-color: rgba(105, 105, 105, 0.25);
+}
+
+.text-content table.standard-table:not(.learn-box) td {
+    border: 2px solid #536b77;
+}
+
+.note {
+    background: #6f6f6f;
+    border-color: #f6b73c;
+    border-radius: 4px;
+    color: #2a424e;
+}
+
+
 .grey {
   color: #999;
 }
@@ -43,6 +107,15 @@ a {
 
 .regex i b {
   color: #70ff57;
+}
+
+.regex b.g3 {
+    color: #ed84ff;
+    text-shadow: 0px 0px 1px;
+}
+
+.regex b.g5 {
+    color: #d200ff;
 }
 
 #exp_dsp .error, .regex b.err {
@@ -195,6 +268,14 @@ label {
 }
 
 .settings-button-stroke {
+  stroke: #088ca4;
+}
+
+.open-wiki-button-st0 {
+  fill: #263238;
+}
+
+.open-wiki-button-st1, #open-wiki-button svg {
   stroke: #088ca4;
 }
 

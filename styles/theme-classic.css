@@ -111,6 +111,14 @@ body {
   stroke: #333333;
 }
 
+.open-wiki-button-st0 {
+  fill: #FFFFFF;
+}
+
+.open-wiki-button-st1 {
+  stroke:#000000;
+}
+
 ::-webkit-scrollbar-track {
     background: #f1f1f1; 
 }

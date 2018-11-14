@@ -11,6 +11,10 @@ body {
   padding-bottom: 500px;
 }
 
+iframe {
+  border: none;
+}
+
 .group {
   padding: 10px 20px;
 }
@@ -214,11 +218,12 @@ body {
   display: inline-block;
 }
 
-#open-settings-button {
+#open-settings-button, #open-wiki-button {
   cursor: pointer;
+  margin-left: 10px;
 }
 
-.settings-button {
+.settings-button, #open-wiki-button {
   width: 20px;
 }
 
@@ -241,4 +246,17 @@ body {
 
 #buttons div {
   float: right;
+}
+
+.open-wiki-button-st1 {
+  fill: none;
+  stroke-miterlimit:10;
+}
+
+.open-wiki-button-st2 {
+  font-family: 'MyriadPro-Regular';
+}
+
+.open-wiki-button-st3 {
+  font-size: 12px;
 }
